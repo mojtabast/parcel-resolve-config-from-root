@@ -1,0 +1,19 @@
+{
+  "name": "parcel-resolve-config-from-root",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "buffer": "^5.5.0||^6.0.0",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "clean": "rm -rf .parcel-cache && rm -rf packages/test-package/dist"
+  }
+}

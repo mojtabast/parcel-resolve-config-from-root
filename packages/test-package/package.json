@@ -1,0 +1,17 @@
+{
+  "name": "test-package",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build"
+  },
+  "dependencies": {
+    "@ledgerhq/hw-app-eth": "^6.35.7",
+    "@ledgerhq/hw-transport-webhid": "^6.28.5"
+  },
+  "@parcel/resolver-default": {
+    "packageExports": true
+  }
+}
